@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from 'react'
 import Image from "next/image";
+import NavItems from "@/components/NavItems";
+import UserDropDown from "@/components/UserDropDown";
 
 const Header = () => {
     return (
@@ -11,6 +13,10 @@ const Header = () => {
 
                     </Image>
                 </Link>
+                <nav className="hidden sm:block">
+                    <NavItems />
+                </nav>
+                <UserDropDown />
             </div>
         </header>
     )
