@@ -39,9 +39,15 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     </div>
                 </div>
 
-                <div className="flex-1 relative">
-                    <Image src="/assets/images/dashboard.png" alt="Dashboard Preview" width={1440} height={1150} className="auth-dashboard-preview absolute top-0" />
-                    
+                <div className="relative min-h-screen w-full flex items-center justify-end">
+                    <Image
+                        src="/assets/images/dashboard.png"
+                        alt="Dashboard Preview"
+                        width={1440}
+                        height={1150}
+                        priority
+                        className="w-auto max-w-full max-h-[90vh] object-contain -translate-y-23"
+                    />
                 </div>
             </section>
 
